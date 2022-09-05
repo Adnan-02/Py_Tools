@@ -1,0 +1,10 @@
+import os
+import gtts
+
+x = input("Enter text for converting into speech. \n")
+
+mySpeech = gtts.gTTS(text = x)
+mySpeech.save("Intro.mp3")
+os.system("Intro.mp3")
+
+print("Check the save mp3 file")
